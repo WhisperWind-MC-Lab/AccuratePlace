@@ -1,0 +1,9 @@
+Accurate Place
+
+The accurate block placement protocol v3 decoding behavior is derived from
+Servux and Litematica by masa and contributors:
+https://github.com/sakura-ryoko/servux
+https://github.com/sakura-ryoko/litematica
+
+Those projects and this derivative implementation are distributed under the
+GNU Lesser General Public License, version 3 or later.
