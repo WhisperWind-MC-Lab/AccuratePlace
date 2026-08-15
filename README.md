@@ -12,13 +12,14 @@ Build with Java 21:
 .\gradlew.bat build
 ```
 
-Copy `build/libs/accurateplace-0.1.0.jar` to the server's `mods` directory. Clients keep Forgematica and select Easy Place protocol `Version 3` manually. This mod does not advertise itself as Servux and intentionally implements no Servux data-sync channels.
+Copy `build/libs/accurateplace-0.1.1.jar` to the server's `mods` directory. Clients keep Forgematica and select Easy Place protocol `Version 3` manually. This mod does not advertise itself as Servux and intentionally implements no Servux data-sync channels.
 
 ## Safety limits
 
 - Cannot force `powered` or arbitrary `waterlogged` values.
 - Cannot request a double slab from one item.
 - Applies only while a real server player places a `BlockItem`.
+- Bypasses only the protocol-encoded positive X hit offset; vanilla Y/Z hit validation remains active.
 - Invalid or unsupported values fall back to vanilla placement state.
 
 The v3 decoding behavior is derived from Servux and Litematica, licensed under LGPL-3.0-or-later.
